@@ -36,7 +36,7 @@ function createExample(name, details) {
       catch (error)
       {
         status = 'error';
-        results = error.message;
+        results = error;
       }
 
       var formatted = status + ': ' + JSON.stringify(test.input) + ' -> ' +
